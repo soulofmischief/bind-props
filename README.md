@@ -25,16 +25,35 @@ import * as ctrl from './ctrl'
 export class Test {
   constructor() { 
     super()
-    this.message = 'Sup'
+    this.message = 'Howdy!'
   }
 
   ctrl = bindProps( this, ctrl )
 }
 ```
 
+###### index.js
+```js
+import { Test } from './Test'
+
+Test.ctrl.test()
+
+// -> Public: Howdy!
+// -> Private: Howdy!
+
+Test.ctrl.testPrivate()
+
+// -> undefined
+```
+
 ###### ctrl.js
 ```js
 export function test() {
-  console.log( this.message )
+  console.log( 'Public: ', this.message )
+  testPrivate.call( this )
+}
+
+function testPrivate() {
+  console.log( 'Private: ', this.value )
 }
 ```
