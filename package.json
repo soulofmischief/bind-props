@@ -1,6 +1,6 @@
 {
   "name": "@soulofmischief/bind-props",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Bind each function property of an object to a new context.",
   "main": "lib/index.js",
   "repository": "https://github.com/soulofmischief/bind-props",
