@@ -1,0 +1,10 @@
+language:
+  node_js
+node_js:
+  - lts/*
+  - "7"
+install:
+  - npm install codecov ospec nyc
+script:
+  - npm run coverage
+  - codecov
