@@ -8,6 +8,12 @@
 
 This module binds each function property of an object to a new context. This is useful for defining class methods in separate files in order to reduce module size and increase code clarity.
 
+## Motivation
+
+Modularity is awesome. Javascript classes aren't very modular. Classes methods must be defined inside the scope of the definition if they wish to inherit the class context! `bind-props` helps to bring sanity back to your classes by allowing you to define large methods in separate files, namespacing them how you choose.
+
+Private methods are achievable simply by using `Function.prototype.call` on a non-exported method with `this` while inside of any exported instance method. 
+
 ## Example
 
 ###### index.js
