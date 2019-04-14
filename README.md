@@ -16,6 +16,10 @@ Modularity is awesome. Javascript classes aren't very modular. Classes methods m
 
 Private methods are achievable simply by using `Function.prototype.call` on a non-exported method with `this` while inside of any exported instance method. 
 
+## Install
+
+```$ npm install @soulofmischief/bind-props --save```
+
 ## Example
 
 ###### Test.js
@@ -57,3 +61,4 @@ function testPrivate() {
   console.log( 'Private: ', this.value )
 }
 ```
+
