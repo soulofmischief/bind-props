@@ -10,7 +10,7 @@ This module binds each function property of an object to a new context. This is 
 
 ## Motivation
 
-Modularity is awesome. Javascript classes aren't very modular. Classes methods must be defined inside the scope of the definition if they wish to inherit the class context! And the standard way for adding static methods doesn't work with namespaced methods. 
+Modularity is awesome. Javascript classes aren't very modular. Class methods must be defined inside the scope of the definition if they wish to inherit the class context! And the standard way for adding static methods doesn't work with namespaced methods. 
  
  `bind-props` helps to bring sanity back to your classes by allowing you to define large methods in separate files, namespacing them how you choose.
 
@@ -58,7 +58,7 @@ export function test() {
 }
 
 function testPrivate() {
-  console.log( 'Private: ', this.value )
+  console.log( 'Private: ', this.message )
 }
 ```
 
