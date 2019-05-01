@@ -6,7 +6,7 @@
 
 ## About
 
-This module binds each function property of an object to a new context. This is useful for defining class methods in separate files in order to reduce module size and increase code clarity.
+This module recursively binds each function property of an object to a new context. This is useful for defining class methods in separate files in order to reduce module size and increase code clarity.
 
 ## Motivation
 
